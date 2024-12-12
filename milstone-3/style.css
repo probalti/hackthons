@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: white; /* Dark black background */
+}
+
+h1 {
+    text-align: center;
+    color: black; /* White text color */
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: gray; /* Dark gray background */
+    color: black; /* White text color */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px black;
+    padding: 20px;
+}
+
+fieldset {
+    border: 2px solid black(168, 23, 168) 500; /* Darker gray border */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    margin-top: 10px;
+    color: black; /* White text color */
+}
+
+input, textarea {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid gray(168, 23, 168) 500; /* Darker gray border */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: gray(168, 23, 168) 500; /* Very dark gray background */
+    color: black; /* White text color */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: gray(168, 23, 168) 500; /* Darker button background */
+    color: black; /* White text color */
+    border: 1px solid gray(168, 23, 168) 500; /* Dark gray border */
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(168, 23, 168) 500; /* Slightly lighter on hover */
+}
+
+#resumeoutput {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid grey 500; /*border */
+    border-radius: 8px;
+    background-color: gray 500; /* black background */
+    color: black; /* White text color */
+    box-shadow: 0 4px 8px black;
+}
+
+#resumeoutput h2 {
+    color: black; /* text color */
+}

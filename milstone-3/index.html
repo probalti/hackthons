@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="resumeform">
+        <fieldset>        
+            <legend>PERSONAL INFORMATION </legend>
+            
+            <label for="username">RESUME URL:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="name">name:</label>
+            <input type="text" id="name" name="name" required ><br>
+
+            <label for="e-mail">e-mail:</label>
+            <input type="email" id="email" name="email" required ><br>
+
+            <label for="phone">phone:</label>
+            <input type="tel" id="phone" name="phone" required ><br>
+
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend id="EDUCATION">EDUCATION</legend>
+            <textarea name="education" id="education" rows="4" required></textarea> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend id="SKILLS">SKILLS</legend>
+            <textarea name="skills" id="skills" rows="4" required></textarea> <br>
+        </fieldset>
+
+
+        <button type="submit">GENRATE RESUME BELOW</button>
+    </form>
+
+
+    <div id="resumeoutput">
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
