@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Shareable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Editable Shareable Resume Builder</h1>
+    <form id="resume-form">
+        <fieldset>        
+            <legend>PERSONAL INFORMATION</legend>
+            <label for="username">RESUME URL:</label>
+            <input type="text" id="username" name="username" placeholder="Enter unique username" required><br>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>EDUCATION</legend>
+            <textarea name="education" id="education" rows="4" placeholder="Enter your education details" required></textarea> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>SKILLS</legend>
+            <textarea name="skills" id="skills" rows="4" placeholder="Enter your skills" required></textarea> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>EXPERIENCE</legend>
+            <textarea name="experience" id="experience" rows="4" placeholder="Enter your work experience" required></textarea> <br>
+        </fieldset>
+
+        <button type="submit">GENERATE RESUME</button>
+    </form>
+
+    <!-- Dynamic and Editable Resume Display -->
+    <div id="resume-display" contenteditable="true"></div>
+
+    <!-- Shareable Link and PDF Download -->
+    <div id="shareable-link-container" style="display: none;">
+        <h2>Shareable Link</h2>
+        <h5>You can now share your resume with a unique URL:</h5>
+        <a href="#" id="shareable-link" target="_blank"></a>
+        <br>
+        <button id="download-pdf"><b>Download as PDF</b></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
